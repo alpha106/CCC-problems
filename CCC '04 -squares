@@ -1,0 +1,8 @@
+def check(data, counter):
+  if counter * counter <= data:
+    counter += 1
+    return check(data, counter)
+  else:
+    counter -= 1
+    return str(counter)
+print('The largest square has side length ' + check(int(input()),1) + '.')
